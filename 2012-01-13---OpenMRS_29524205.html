@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IRC Chat : 2012-01-13 - OpenMRS</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">IRC Chat</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Logs---OpenMRS_2424835.html">Logs - OpenMRS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="2012---OpenMRS_28936149.html">2012 - OpenMRS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="2012-01---OpenMRS_28936150.html">2012-01 - OpenMRS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            IRC Chat : 2012-01-13 - OpenMRS
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Unknown User (openmrsbot)</span>, last modified on 2013-07-09
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="table-wrap"><table class="confluenceTable"><tbody><tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011109" name="011109" rel="nofollow">01:11:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; djazayeri: do you use date objects or do you use calendar objects for openmrs and when storing in the database convert it to a date object?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011140" name="011140" rel="nofollow">01:11:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; deadpool_: we use calendar objects for any conversions or calculations
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011147" name="011147" rel="nofollow">01:11:47</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; when passing things around we typically leave them as dates.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011233" name="011233" rel="nofollow">01:12:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; so you always convert then
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011243" name="011243" rel="nofollow">01:12:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; deadpool_: what do you mean?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011258" name="011258" rel="nofollow">01:12:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; so i am trying to save a date in openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011315" name="011315" rel="nofollow">01:13:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; but the date object is not as formidable as the calendar object
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011350" name="011350" rel="nofollow">01:13:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; i have to do some math on the outside while there are built in functions with the calendar object that make it easier to manipulate
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011400" name="011400" rel="nofollow">01:14:00</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; i am just wondering what the convention is in openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011418" name="011418" rel="nofollow">01:14:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; the convention is to store dates in the DB, and if you need to operate on it, use Calendar.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#011530" name="011530" rel="nofollow">01:15:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; ah ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012440" name="012440" rel="nofollow">01:24:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** morristic has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012715" name="012715" rel="nofollow">01:27:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; djazayeri: quick question again if i want to do a database hibernate query by userid do i use user.userid or user.personid?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012726" name="012726" rel="nofollow">01:27:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; user.userId
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012734" name="012734" rel="nofollow">01:27:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; user.personId is something else.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012738" name="012738" rel="nofollow">01:27:38</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; i.e. it's the FK to person
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#012826" name="012826" rel="nofollow">01:28:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; so what is the purpose of user.personId for a user?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#013527" name="013527" rel="nofollow">01:35:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; deadpool_: lets you look at the underlying person record to see what their name, age, sex, etc, is
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#013614" name="013614" rel="nofollow">01:36:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; ah
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021642" name="021642" rel="nofollow">02:16:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; djazayeri: is there an easy way to migrate to annotation based controllers from the moduleapplication context?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021713" name="021713" rel="nofollow">02:17:13</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; deadpool_: nothing automated that I know of
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021740" name="021740" rel="nofollow">02:17:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; djazayeri: not automated i mean a pretty good reference i was looking on openmrs but i don't see anythign
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021802" name="021802" rel="nofollow">02:18:02</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; deadpool_: I don't know of one
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021805" name="021805" rel="nofollow">02:18:05</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; sorry
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021808" name="021808" rel="nofollow">02:18:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; (gotta run now to dinner)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#021826" name="021826" rel="nofollow">02:18:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;deadpool_&gt; djazayeri: fair enough thanks for you help
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#024729" name="024729" rel="nofollow">02:47:29</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#030717" name="030717" rel="nofollow">03:07:17</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** deadpool_ has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#032032" name="032032" rel="nofollow">03:20:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** upul` has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#032032" name="032032" rel="nofollow">03:20:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v upul`
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#032212" name="032212" rel="nofollow">03:22:12</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; hi djazayeri
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#040045" name="040045" rel="nofollow">04:00:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** alex10791_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#040122" name="040122" rel="nofollow">04:01:22</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** alex10791_ has left #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#041211" name="041211" rel="nofollow">04:12:11</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#051414" name="051414" rel="nofollow">05:14:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#051615" name="051615" rel="nofollow">05:16:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#051616" name="051616" rel="nofollow">05:16:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh_ is now known as lh
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#052158" name="052158" rel="nofollow">05:21:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; hi wyclif
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#053603" name="053603" rel="nofollow">05:36:03</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#053823" name="053823" rel="nofollow">05:38:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#053823" name="053823" rel="nofollow">05:38:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh_ is now known as lh
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#054234" name="054234" rel="nofollow">05:42:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#054851" name="054851" rel="nofollow">05:48:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** sunbiz has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#054851" name="054851" rel="nofollow">05:48:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v sunbiz
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#063222" name="063222" rel="nofollow">06:32:22</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#063233" name="063233" rel="nofollow">06:32:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#065101" name="065101" rel="nofollow">06:51:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#073001" name="073001" rel="nofollow">07:30:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** sunbiz has left #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#073042" name="073042" rel="nofollow">07:30:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#073056" name="073056" rel="nofollow">07:30:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#073249" name="073249" rel="nofollow">07:32:49</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#080104" name="080104" rel="nofollow">08:01:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** robbyoconnor has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#081541" name="081541" rel="nofollow">08:15:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** robbyoconnor has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#081541" name="081541" rel="nofollow">08:15:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v robbyoconnor
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#081702" name="081702" rel="nofollow">08:17:02</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bwolfe has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#081702" name="081702" rel="nofollow">08:17:02</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +o bwolfe
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#082341" name="082341" rel="nofollow">08:23:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** upul` has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#083112" name="083112" rel="nofollow">08:31:12</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bryq has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#083112" name="083112" rel="nofollow">08:31:12</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v bryq
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#085816" name="085816" rel="nofollow">08:58:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bwolfe has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#090958" name="090958" rel="nofollow">09:09:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bryq has left #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#091054" name="091054" rel="nofollow">09:10:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** surangak has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#092939" name="092939" rel="nofollow">09:29:39</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ningosi has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#093230" name="093230" rel="nofollow">09:32:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** surangak has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#093834" name="093834" rel="nofollow">09:38:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#093834" name="093834" rel="nofollow">09:38:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#094031" name="094031" rel="nofollow">09:40:31</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ningosi has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#094318" name="094318" rel="nofollow">09:43:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ningosi has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#100420" name="100420" rel="nofollow">10:04:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ningosi has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#100431" name="100431" rel="nofollow">10:04:31</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103759" name="103759" rel="nofollow">10:37:59</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; hi rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103807" name="103807" rel="nofollow">10:38:07</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; hi dkayiwa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103836" name="103836" rel="nofollow">10:38:36</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: as for META-175  should i make the base class for BaseShareScenarioTest be MetadataSharingBaseTest?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103940" name="103940" rel="nofollow">10:39:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: ha, you're the spring hero! :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103954" name="103954" rel="nofollow">10:39:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: lolllll not at all
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103956" name="103956" rel="nofollow">10:39:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#103958" name="103958" rel="nofollow">10:39:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: you took the last should ticket :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104015" name="104015" rel="nofollow">10:40:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: i had no other option :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104127" name="104127" rel="nofollow">10:41:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: how about BaseSharingScenariosTest?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104141" name="104141" rel="nofollow">10:41:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: that is the one am building
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104201" name="104201" rel="nofollow">10:42:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; as per META-175
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104212" name="104212" rel="nofollow">10:42:12</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: sorry, yes, do you want to name it differently or what?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104257" name="104257" rel="nofollow">10:42:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: no. i was simply asking how i reuse Ben's work because it depends on META-174
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104306" name="104306" rel="nofollow">10:43:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: ohh right ;D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104337" name="104337" rel="nofollow">10:43:37</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: so Ben created a framework that simulates two OpenMRS servers
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104344" name="104344" rel="nofollow">10:43:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104408" name="104408" rel="nofollow">10:44:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: this way you just say what happens on the exporting server and what happens on the importing server
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104420" name="104420" rel="nofollow">10:44:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: so how do i reuse that framework? do i just subclass one of his classes?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104436" name="104436" rel="nofollow">10:44:36</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; see PreserveConceptIdsTest
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104444" name="104444" rel="nofollow">10:44:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104550" name="104550" rel="nofollow">10:45:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: in a method importPackageToEmptyServer you just create a package from getItemsOnExportServer and then import it to an empty server
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104651" name="104651" rel="nofollow">10:46:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: you'll create the package returning getItemsOnExportServer from runOnExportServer method and verify if it's properly imported in runOnImportServerAfterImport
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104716" name="104716" rel="nofollow">10:47:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: It's really easy with what Ben has created
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104819" name="104819" rel="nofollow">10:48:19</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: so how do i use Ben's framework? do i subclass one of his classes? or just copy and paste his methods?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104840" name="104840" rel="nofollow">10:48:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: that is what i have not understood
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104859" name="104859" rel="nofollow">10:48:59</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: you just copy &amp; paste shouldPreserveConceptIdAcrossServers to importPackageToEmptyServer
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104907" name="104907" rel="nofollow">10:49:07</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104908" name="104908" rel="nofollow">10:49:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: and change what happens in methods
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104945" name="104945" rel="nofollow">10:49:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; runOnExportServer, runOnImportServerBeforeImport, runOnImportServerAfterImport, modifyImportedPackage
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#104958" name="104958" rel="nofollow">10:49:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105024" name="105024" rel="nofollow">10:50:24</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: so yes for that to work you need BaseSharingScenariosTest to extend MetadataSharingBaseTest
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105052" name="105052" rel="nofollow">10:50:52</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: thats exactly what i was asking :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105109" name="105109" rel="nofollow">10:51:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: thanks
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105116" name="105116" rel="nofollow">10:51:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: you're welcome :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105215" name="105215" rel="nofollow">10:52:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: sorry for asking many questions. it is a result of one time when i wasted the whole day going a wrong route when i should have first asked to confirm what i was doing  :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105334" name="105334" rel="nofollow">10:53:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: it wasn't wasted then, you still learned something :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105354" name="105354" rel="nofollow">10:53:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: hahahahha!!!! what a consolation!!!  :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105509" name="105509" rel="nofollow">10:55:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: I need to go offline for a while so I'll answer your possible question now :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105534" name="105534" rel="nofollow">10:55:34</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: i do not have any for now. if i get them, will ask you when yo back
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105630" name="105630" rel="nofollow">10:56:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: in importPackageOverwritingItemsMatchByUuids you need to modify confict resolutions in the modifyImportedPackage method
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105650" name="105650" rel="nofollow">10:56:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105718" name="105718" rel="nofollow">10:57:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: you'll just iterate over ImportedPackage.getImportedItems() and set import mode to overwrite whenever uuids are the same
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105727" name="105727" rel="nofollow">10:57:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105826" name="105826" rel="nofollow">10:58:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: that is if (Handler.getUuid(ImportedItem.getExisting()).equals(Handler.getUuid(ImortedItem.getIncoming())))
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105843" name="105843" rel="nofollow">10:58:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: then ImportedItem.setImportType(ImportType.OVERWRITE);
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105843" name="105843" rel="nofollow">10:58:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105847" name="105847" rel="nofollow">10:58:47</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: something like that
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105852" name="105852" rel="nofollow">10:58:52</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa&gt; dkayiwa: okay ttyl
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105853" name="105853" rel="nofollow">10:58:53</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105900" name="105900" rel="nofollow">10:59:00</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#105916" name="105916" rel="nofollow">10:59:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#114543" name="114543" rel="nofollow">11:45:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bryq has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#114543" name="114543" rel="nofollow">11:45:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v bryq
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#115055" name="115055" rel="nofollow">11:50:55</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** mathiaslin has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#115943" name="115943" rel="nofollow">11:59:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** james_regen has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#115943" name="115943" rel="nofollow">11:59:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v james_regen
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#120750" name="120750" rel="nofollow">12:07:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#120750" name="120750" rel="nofollow">12:07:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#123233" name="123233" rel="nofollow">12:32:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; hi rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#123256" name="123256" rel="nofollow">12:32:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa: i do not seem to see ImportType.OVERWRITE
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#123440" name="123440" rel="nofollow">12:34:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#123957" name="123957" rel="nofollow">12:39:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#123957" name="123957" rel="nofollow">12:39:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa_
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#124244" name="124244" rel="nofollow">12:42:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125057" name="125057" rel="nofollow">12:50:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125137" name="125137" rel="nofollow">12:51:37</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125137" name="125137" rel="nofollow">12:51:37</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125332" name="125332" rel="nofollow">12:53:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa_ has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125614" name="125614" rel="nofollow">12:56:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125739" name="125739" rel="nofollow">12:57:39</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125739" name="125739" rel="nofollow">12:57:39</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125745" name="125745" rel="nofollow">12:57:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125745" name="125745" rel="nofollow">12:57:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#125745" name="125745" rel="nofollow">12:57:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v rafa_
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#130850" name="130850" rel="nofollow">13:08:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#131815" name="131815" rel="nofollow">13:18:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** mathiaslin has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#134244" name="134244" rel="nofollow">13:42:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#140311" name="140311" rel="nofollow">14:03:11</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#140938" name="140938" rel="nofollow">14:09:38</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#141332" name="141332" rel="nofollow">14:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#141337" name="141337" rel="nofollow">14:13:37</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#141543" name="141543" rel="nofollow">14:15:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** maurya has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#142930" name="142930" rel="nofollow">14:29:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; hi rafa_
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#142935" name="142935" rel="nofollow">14:29:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: hi
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143003" name="143003" rel="nofollow">14:30:03</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: should i go for the remaining non essential ticket META-115 as i wait for your review comments?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143042" name="143042" rel="nofollow">14:30:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: It's similar to META-127
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143056" name="143056" rel="nofollow">14:30:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: there's some sort of problem with class loading
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143105" name="143105" rel="nofollow">14:31:05</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: oh i see
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143117" name="143117" rel="nofollow">14:31:17</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: probably solving META-127 will solve META-115
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143135" name="143135" rel="nofollow">14:31:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: problem is it not easily reproducible  :(
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143143" name="143143" rel="nofollow">14:31:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: yeah :/
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143217" name="143217" rel="nofollow">14:32:17</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: if the reporter can at least tell us how we can reliably reproduce it!!!
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143241" name="143241" rel="nofollow">14:32:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: the thing is the reporter can't tell us :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143254" name="143254" rel="nofollow">14:32:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: it happens sporadically
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143301" name="143301" rel="nofollow">14:33:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: ok  :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143321" name="143321" rel="nofollow">14:33:21</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: let me just respond to your review comments in the meantime :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143344" name="143344" rel="nofollow">14:33:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: but it's not a blocker
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143401" name="143401" rel="nofollow">14:34:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: the ticket?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143409" name="143409" rel="nofollow">14:34:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: yes
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143415" name="143415" rel="nofollow">14:34:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: correct
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143443" name="143443" rel="nofollow">14:34:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: let me look more into your code review
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143506" name="143506" rel="nofollow">14:35:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: yes i have already seen your initial comments :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143508" name="143508" rel="nofollow">14:35:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: after META-175 you've cleared all sprint ticket and can work on something else
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143518" name="143518" rel="nofollow">14:35:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143518" name="143518" rel="nofollow">14:35:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: like 1.9 tickets :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#143526" name="143526" rel="nofollow">14:35:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_:  8)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#144814" name="144814" rel="nofollow">14:48:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** Mkop has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#144838" name="144838" rel="nofollow">14:48:38</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145828" name="145828" rel="nofollow">14:58:28</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; hi rafa_
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145854" name="145854" rel="nofollow">14:58:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; hi :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145914" name="145914" rel="nofollow">14:59:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: there is a comment where you said &quot;it should be empty&quot;. what does that mean?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145914" name="145914" rel="nofollow">14:59:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; did you get the overall idea?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145935" name="145935" rel="nofollow">14:59:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; rafa_: nothing happens there as it's empty server
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145936" name="145936" rel="nofollow">14:59:36</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: somehow :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145951" name="145951" rel="nofollow">14:59:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: meaning i should leave the method empty?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#145959" name="145959" rel="nofollow">14:59:59</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: yeah
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#150006" name="150006" rel="nofollow">15:00:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: ok thanks :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#150026" name="150026" rel="nofollow">15:00:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: empty server = empty method :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#150036" name="150036" rel="nofollow">15:00:36</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_:   :D
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#150821" name="150821" rel="nofollow">15:08:21</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; hi rafa_
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#150828" name="150828" rel="nofollow">15:08:28</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: in onImportServerAfterImport how do i get the existing?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151352" name="151352" rel="nofollow">15:13:52</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: the incoming is in getItemsOnExportServer, the exsiting is in getItemsOnImportServer
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151404" name="151404" rel="nofollow">15:14:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: the merged should be in the db
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151416" name="151416" rel="nofollow">15:14:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: oh thanks
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151621" name="151621" rel="nofollow">15:16:21</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_:  doesnt getItemsOnImportServer get items from the database?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151752" name="151752" rel="nofollow">15:17:52</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: and in that case, wouldn't that mean the merged and getItemsOnImportServer are referring to the same object?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151920" name="151920" rel="nofollow">15:19:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: nope
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151935" name="151935" rel="nofollow">15:19:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: getItemsOnImportServer must not return an item from the db
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151950" name="151950" rel="nofollow">15:19:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: where does it get them from?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#151958" name="151958" rel="nofollow">15:19:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: instantiates
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152009" name="152009" rel="nofollow">15:20:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: with new :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152026" name="152026" rel="nofollow">15:20:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: oh it hardcodes them?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152032" name="152032" rel="nofollow">15:20:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: yes
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152042" name="152042" rel="nofollow">15:20:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_:  as they should be when imported successfully ?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152057" name="152057" rel="nofollow">15:20:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: no
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152104" name="152104" rel="nofollow">15:21:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: oh :0
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152106" name="152106" rel="nofollow">15:21:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; :)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152127" name="152127" rel="nofollow">15:21:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: it's suppose to represent an item that is already on the import server
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152142" name="152142" rel="nofollow">15:21:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;rafa_&gt; dkayiwa: it'll be overwritten with the incoming item
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152144" name="152144" rel="nofollow">15:21:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dkayiwa&gt; rafa_: ok
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152414" name="152414" rel="nofollow">15:24:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152433" name="152433" rel="nofollow">15:24:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dkayiwa has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152804" name="152804" rel="nofollow">15:28:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** Mkop has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#152804" name="152804" rel="nofollow">15:28:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +v Mkop
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#153435" name="153435" rel="nofollow">15:34:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#153435" name="153435" rel="nofollow">15:34:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +o djazayeri
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#164723" name="164723" rel="nofollow">16:47:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** maurya has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#165444" name="165444" rel="nofollow">16:54:44</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#170929" name="170929" rel="nofollow">17:09:29</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#172606" name="172606" rel="nofollow">17:26:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** rafa_ has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#175323" name="175323" rel="nofollow">17:53:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#175646" name="175646" rel="nofollow">17:56:46</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dawn_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#175722" name="175722" rel="nofollow">17:57:22</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** surangak has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180033" name="180033" rel="nofollow">18:00:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; !scrumon dawn
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180033" name="180033" rel="nofollow">18:00:33</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 * OpenMRSBot says the DAILY SCRUM MEETING is STARTING. This meeting should not last longer than 15 minutes. Please hold other comments until the end of the meeting, or message someone privately. Thank you! ScrumMaster dawn- you may begin when ready.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180050" name="180050" rel="nofollow">18:00:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; djazayeri: i guess we need to find ben and wyclif
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180110" name="180110" rel="nofollow">18:01:10</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; since dkayiwa and rafa already emailed out their updates...
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180216" name="180216" rel="nofollow">18:02:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; djazayeri:  do you just want to email yours and keep all the updates in that thread?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180243" name="180243" rel="nofollow">18:02:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; sure, that's easier, and we're not going to discuss much without the sprint leader, and with time running late for ben.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180247" name="180247" rel="nofollow">18:02:47</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bwolfe has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180247" name="180247" rel="nofollow">18:02:47</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +o bwolfe
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180306" name="180306" rel="nofollow">18:03:06</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; dawn_: one thought: we should re-poll the team about the time they want to do the scrums.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180323" name="180323" rel="nofollow">18:03:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; I believe the times we've chosen don't actually work for dkayiwa, but he was too shy to say so.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180326" name="180326" rel="nofollow">18:03:26</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;bwolfe&gt; friday night is just bad. :-)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180342" name="180342" rel="nofollow">18:03:42</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;bwolfe&gt; djazayeri, friday sundown to saturday sundown he doesn't do any work
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180355" name="180355" rel="nofollow">18:03:55</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; djazayeri:  sure. i'll send out a doodle poll with a schedule for the week, and we can go from there
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180401" name="180401" rel="nofollow">18:04:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;bwolfe&gt; so we'd have to do at latest 5pm EAT...which works for me starting next week
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180418" name="180418" rel="nofollow">18:04:18</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; bwolfe:  can you email your updates in the same thread daniel and rafal made so we can keep it all in one place?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180423" name="180423" rel="nofollow">18:04:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; bwolfe: I think it may be more than Friday that he has trouble making the scrums at the scheduled time.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180427" name="180427" rel="nofollow">18:04:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; !scrumoff dawn
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180427" name="180427" rel="nofollow">18:04:27</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 * OpenMRSBot says the DAILY SCRUM MEETING has ENDED. This channel is now returned to normal hacking operations. Post-scrum meeting follow-up conversations may now begin.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180430" name="180430" rel="nofollow">18:04:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; anyway, yeah, dawn, please email.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180432" name="180432" rel="nofollow">18:04:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;bwolfe&gt; sure...
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180443" name="180443" rel="nofollow">18:04:43</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; bwolfe: thanks!
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180623" name="180623" rel="nofollow">18:06:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180639" name="180639" rel="nofollow">18:06:39</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; hey
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180648" name="180648" rel="nofollow">18:06:48</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180700" name="180700" rel="nofollow">18:07:00</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;dawn_&gt; wyclif:  we're just going to email updates in the thread rafal and daniel already started rather than listing them here
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#180703" name="180703" rel="nofollow">18:07:03</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181005" name="181005" rel="nofollow">18:10:05</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; hello
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181014" name="181014" rel="nofollow">18:10:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, bwolfe are are scrumming?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181020" name="181020" rel="nofollow">18:10:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, bwolfe are we scrumming?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181045" name="181045" rel="nofollow">18:10:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; wyclif: see what dawn said
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181058" name="181058" rel="nofollow">18:10:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, i see nothing
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181138" name="181138" rel="nofollow">18:11:38</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; wyclif: Â we're just going to email updates in the thread rafal and daniel already started rather than listing them here
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181145" name="181145" rel="nofollow">18:11:45</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; i.e. just reply to the email thread.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181150" name="181150" rel="nofollow">18:11:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, cool, thanks
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181157" name="181157" rel="nofollow">18:11:57</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; if you have a particular blocker or discussion point, raise it here
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181208" name="181208" rel="nofollow">18:12:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; but with no rafal, it's tough.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181214" name="181214" rel="nofollow">18:12:14</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, looks like the replace button is broken
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181229" name="181229" rel="nofollow">18:12:29</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; but others work?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181232" name="181232" rel="nofollow">18:12:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; is there a stack trace?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181236" name="181236" rel="nofollow">18:12:36</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; or is it a js error?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181241" name="181241" rel="nofollow">18:12:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, javascript errors
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181256" name="181256" rel="nofollow">18:12:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; you've done a recent svn update, I assume?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181302" name="181302" rel="nofollow">18:13:02</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, unescaped characters
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181332" name="181332" rel="nofollow">18:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, missing } after property list
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181332" name="181332" rel="nofollow">18:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; [Break On This Error]
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181332" name="181332" rel="nofollow">18:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; ...'Choose replacement for: '&amp;lt;h:handle object=\&amp;quot;org.openmrs.Field@3b23f2d9\...
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181332" name="181332" rel="nofollow">18:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; assess...s=false (line 297, col 48)
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181332" name="181332" rel="nofollow">18:13:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; 
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181354" name="181354" rel="nofollow">18:13:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, see the full colon and semi colon?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181438" name="181438" rel="nofollow">18:14:38</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; not exactly
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181500" name="181500" rel="nofollow">18:15:00</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; look at the svn history on the jsp page and see if someone changed it recently
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181819" name="181819" rel="nofollow">18:18:19</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#181828" name="181828" rel="nofollow">18:18:28</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#183649" name="183649" rel="nofollow">18:36:49</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, thanks, i probaly need to do an svn update, there is a fix that was made
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#185132" name="185132" rel="nofollow">18:51:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dawn_ has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#192030" name="192030" rel="nofollow">19:20:30</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** surangak has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#193047" name="193047" rel="nofollow">19:30:47</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#193054" name="193054" rel="nofollow">19:30:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#193054" name="193054" rel="nofollow">19:30:54</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** ChanServ sets mode: +o djazayeri
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#200105" name="200105" rel="nofollow">20:01:05</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** james_regen has left #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#202651" name="202651" rel="nofollow">20:26:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** dawn_ has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204015" name="204015" rel="nofollow">20:40:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; hi djazayeri
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204021" name="204021" rel="nofollow">20:40:21</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; hi wyclif
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204052" name="204052" rel="nofollow">20:40:52</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, is there a way  to do update an imported item using downloaded packages?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204108" name="204108" rel="nofollow">20:41:08</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; could you be more specific?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204117" name="204117" rel="nofollow">20:41:17</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; I don't understand
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204216" name="204216" rel="nofollow">20:42:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, imagine i create a package on one server, imported on another and i edit the item on the orginal server and wish to apply the update on the other with another package
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204302" name="204302" rel="nofollow">20:43:02</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; wyclif: have you seen the publish/subscribe functionality?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204351" name="204351" rel="nofollow">20:43:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; The first server would need to create a new &quot;version&quot; of that package, and the second server would need to check its subscription.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204358" name="204358" rel="nofollow">20:43:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; Is that what you mean?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#204939" name="204939" rel="nofollow">20:49:39</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, so all i need is to change the version number, right?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205003" name="205003" rel="nofollow">20:50:03</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; there's a UI for &quot;create a new version from existing&quot; or &quot;create a new version from scratch&quot;
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205020" name="205020" rel="nofollow">20:50:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; if you've modified an existing metadata you can just do &quot;create a new version from existing&quot; and that will start with the same items pre-selected.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205216" name="205216" rel="nofollow">20:52:16</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, so if i create a new package with changes that wont update, right
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205225" name="205225" rel="nofollow">20:52:25</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; i have to edit an existing package?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205231" name="205231" rel="nofollow">20:52:31</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; wyclif: not automatically via a subscription
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205241" name="205241" rel="nofollow">20:52:41</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; that's what we're talking about right?
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205258" name="205258" rel="nofollow">20:52:58</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; if you export a new version of the same item in a different package, and import that, it should still happen.
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205323" name="205323" rel="nofollow">20:53:23</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;djazayeri&gt; I mean: that should overwrite the item you imported before, assuming you choose &quot;overwrite&quot;
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205429" name="205429" rel="nofollow">20:54:29</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#205701" name="205701" rel="nofollow">20:57:01</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: black;" class="confluenceTd">
+	 &lt;wyclif&gt; djazayeri, let me try that, yes i meant not automatically via subcription
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#212515" name="212515" rel="nofollow">21:25:15</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#213540" name="213540" rel="nofollow">21:35:40</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bwolfe has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#215850" name="215850" rel="nofollow">21:58:50</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#222009" name="222009" rel="nofollow">22:20:09</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** bryq has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#222532" name="222532" rel="nofollow">22:25:32</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#223535" name="223535" rel="nofollow">22:35:35</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#223904" name="223904" rel="nofollow">22:39:04</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** lh has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#232951" name="232951" rel="nofollow">23:29:51</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri1 has joined #openmrs
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#233156" name="233156" rel="nofollow">23:31:56</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** djazayeri has quit IRC
+</td>
+</tr>
+<tr><td style="font-family: monospace;font-size: 9.0pt;color: black;white-space: nowrap;" class="confluenceTd">
+	<a href="#235920" name="235920" rel="nofollow">23:59:20</a>
+</td>
+<td style="font-family: monospace;font-size: 9.0pt;color: grey;" class="confluenceTd">
+	 *** wyclif has joined #openmrs
+</td>
+</tr>
+
+</tbody></table></div>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on 2019-10-14 00:59</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
